@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+      background-color: #90e0ef;
+    }
+    h1{
+      text-align: center;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Payment Fraud Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="form-title">Online Payment Fraud Detection</h1>
+    
+    <form action="/submit-form" method="post" class="form">
+      <div class="form-group">
+        <label for="step">Step:</label>
+        <input type="text" class="form-control" id="step" name="step" placeholder="Step: Represents a unit of time when">
+      </div>
+      <div class="form-group">
+        <label for="type">Type:</label>
+        <input type="text" class="form-control" id="type" name="type" placeholder="Type of online transaction">
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter the amount of the transaction">
+      </div>
+      <div class="form-group">
+        <label for="oldBalanceOrg">OldBalanceOrg:</label>
+        <input type="number" class="form-control" id="oldBalanceOrg" name="oldBalanceOrg" placeholder="Balance before the transaction">
+      </div>
+      <div class="form-group">
+        <label for="newBalanceOrg">NewBalanceOrg:</label>
+        <input type="number" class="form-control" id="newBalanceOrg" name="newBalanceOrg" placeholder="Balance after the transaction">
+      </div>
+      <div class="form-group">
+        <label for="oldBalanceDest">OldBalanceDest:</label>
+        <input type="number" class="form-control" id="oldBalanceDest" name="oldBalanceDest" placeholder="Initial balance of the recipient before">
+      </div>
+      <div class="form-group">
+        <label for="newBalanceDest">NewBalanceDest:</label>
+        <input type="number" class="form-control" id="newBalanceDest" name="newBalanceDest" placeholder="The new balance of the recipient">
+      </div>
+      <button type="submit" class="form-submit-button">Submit</button>
+    </form>
+  </div>
+
+  <style>
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .form-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .form-submit-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</body>
+</html>
